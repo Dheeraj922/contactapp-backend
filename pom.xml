@@ -29,6 +29,16 @@
             <scope>test</scope>
         </dependency>
         <dependency>
+            <groupId>org.springframework.security</groupId>
+            <artifactId>spring-security-web</artifactId>
+            <version>5.0.4.RELEASE</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.security</groupId>
+            <artifactId>spring-security-config</artifactId>
+            <version>5.0.4.RELEASE</version>
+        </dependency>
+        <dependency>
             <groupId>com.jayway.jsonpath</groupId>
             <artifactId>json-path</artifactId>
             <scope>test</scope>
@@ -78,6 +88,8 @@
 
     <properties>
         <java.version>1.8</java.version>
+        <org.springframework.security.version>5.0.4.RELEASE</org.springframework.security.version>
+        <org.springframework.version>5.0.4.RELEASE</org.springframework.version>
     </properties>
 
     <build>
@@ -93,6 +105,11 @@
         <repository>
             <id>spring-releases</id>
             <url>https://repo.spring.io/libs-release</url>
+        </repository>
+        <repository>
+            <id>spring-milestone</id>
+            <name>Spring Milestone Repository</name>
+            <url>https://repo.spring.io/milestone</url>
         </repository>
     </repositories>
     <pluginRepositories>
