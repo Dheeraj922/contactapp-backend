@@ -30,7 +30,7 @@ public class ContactRepositoryTest {
     }
 
     @Test
-    public void testFindNonexistentContactrEnsureOptionalIsNotPresent() throws Exception {
+    public void testFindNonexistentContactEnsureOptionalIsNotPresent() throws Exception {
         assertNoExistingContacts();
         Optional<Contact> contact = repository.findById(NONEXISTENT_ID);
         Assert.assertFalse(contact.isPresent());
